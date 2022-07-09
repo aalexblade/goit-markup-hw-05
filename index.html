@@ -56,8 +56,20 @@
 <section class="section hero-section overlay">  
   <div class="container hero">
       <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-      <button  type="button" class="pointer-main" >Заказать услугу</button>
-  </div>
+      <button  type="button" class="pointer-main" data-modal-open>Заказать услугу</button> 
+
+      <div class="backdrop is-hidden" data-modal>   
+        <div class="modal">
+       <button  class="button-close" data-modal-close>
+        <svg class="icon-close" width="30" height="30">
+          <use href="./images-svg/icon-svg/sprite.svg#icon-close">
+          </use>
+        </svg>
+       </button>  
+       </div>
+      </div>
+      
+   </div>
 </section>
                 <!-- /* Преймущество */ -->
 <section  class="section advantage-section">
@@ -109,13 +121,25 @@
       <div class="container">
         <h2 class="work-title">Чем мы занимаемся</h2>
       <ul class="work">
-        <li class="work-images">
-          <img  src="./images-svg/images-main_page/img1.jpg" width="370" alt="Планирование"></li>
-        <li class="work-images">
-          <img src="./images-svg/images-main_page/img2.jpg" width="370" alt="Внимание к деталям"></li>
-        <li class="work-images">
-          <img src="./images-svg/images-main_page/img3.jpg" width="370" alt="Современные технологии"></li>
-      </ul>
+           <li class="work-images">
+            <div class="work-desktop">
+               <img  src="./images-svg/images-main_page/img1.jpg" width="370" alt="Планирование">
+                <p class="work-text">Десктопные приложения</p>
+            </div>
+          </li>
+           <li class="work-images">
+             <div  class="work-desktop">
+              <img src="./images-svg/images-main_page/img2.jpg" width="370" alt="Внимание к деталям">
+               <p class="work-text">Мобильные приложения</p>
+            </div>
+          </li>
+           <li class="work-images">
+             <div class="work-desktop">
+             <img src="./images-svg/images-main_page/img3.jpg" width="370" alt="Современные технологии">
+             <p class="work-text">Дизайнерские решения</p>
+             </div>
+          </li>
+       </ul>
       </div>
      </section>
                       <!-- наша команда -->
@@ -421,7 +445,8 @@
     </ul>
   </div>
 </div>
-  </footer>
+</footer>
+<script src="./js/modal.js"></script>
 </body>
 </html>
 
