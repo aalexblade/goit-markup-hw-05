@@ -308,8 +308,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 opacity: 1;
+z-index: 1;
 transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden{
@@ -343,12 +344,28 @@ pointer-events: none;
   
 }
 
+
+.button-close{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .icon-close {
   position: absolute;
   top: 8px;
   right: 8px;
- 
+  width: 11px;
+  height: 11px;
   fill:#212121;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -747,6 +764,8 @@ position: absolute;
 
 .social-icon {
   fill:#afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -859,6 +878,8 @@ color: #FFFFFF;
 
   .footer-social-icon {
     fill: #fff;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   
 .box-shadow{
